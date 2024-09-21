@@ -40,6 +40,21 @@
         idag och låt oss diskutera hur vi kan hjälpa ditt företag att växa
         online!
       </p>
+      <form>
+        <!-- 3 st input element och 1 textarea element for att ta emot användarinfo, med skicka-knapp -->
+        <label for="user-name">Namn:</label>
+        <input type="text" name="user-name" id="user-name" required/>
+        <br/>
+        <label for="user-tel">Telefonummer:</label>
+        <input type="number" name="user-tel" id="user-tel" requried/>
+        <br/>
+        <label for="user-e">E-postadress:</label>
+        <input type="text" name="user-E" id="user-e" required/>
+        <br/>
+        <label for="user-message">Meddelande:</label>
+        <textarea id="user-message" name="user-message" rows="10" cols="100" required></textarea>
+        <input type="submit" name="submit-button"/>
+      </form>
     </div>
   </body>
 </html>
