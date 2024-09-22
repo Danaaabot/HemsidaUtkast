@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header id="head">
+    <h1>En header</h1>
+  </header>
+
+  <div id="grid-container">
+    <div class="grid-item item1">
       <h1>Om Oss</h1>
       <p>
         Välkommen till Karlssons Web, din pålitliga partner för alla dina
@@ -18,6 +25,8 @@
         att nå sin fulla potential online.
       </p>
 
+    </div>
+    <div class="grid-item item2">
       <h2>Vår Vision</h2>
       <p>
         På Karlssons Web strävar vi efter att förvandla dina idéer till
@@ -25,7 +34,9 @@
         målmedvetet för att ge våra kunder de verktyg och lösningar de behöver
         för att lyckas på nätet.
       </p>
+    </div>
 
+    <div class="grid-item item3">
       <h1 class="anstallda">Vårt Team</h1>
       <p>
         Vårt team består av erfarna webbutvecklare, designers och digitala
@@ -34,12 +45,32 @@
         och funktionella webbplatser som inte bara ser fantastiska ut utan också
         presterar exceptionellt bra.
       </p>
+    </div>
+
+    <div class="grid-item item4">
       <h3>Kontakta Oss</h3>
       <p>
         Är du redo att ta din digitala närvaro till nästa nivå? Kontakta oss
         idag och låt oss diskutera hur vi kan hjälpa ditt företag att växa
         online!
       </p>
+      <form>
+        <!-- 3 st input element och 1 textarea element for att ta emot användarinfo, med skicka-knapp -->
+        <label for="user-name">Namn:</label>
+        <input type="text" name="user-name" id="user-name" required />
+        <br />
+        <label for="user-tel">Telefonummer:</label>
+        <input type="number" name="user-tel" id="user-tel" requried />
+        <br />
+        <label for="user-e">E-postadress:</label>
+        <input type="text" name="user-E" id="user-e" required />
+        <br />
+        <label for="user-message">Meddelande:</label>
+        <textarea id="user-message" name="user-message" rows="10" cols="100" required></textarea>
+        <input type="submit" name="submit-button" />
+      </form>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

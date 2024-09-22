@@ -1,0 +1,26 @@
+header {
+    background-color: grey;
+    text-align: center;
+    padding: 2em;
+}
+#grid-container{
+    display: grid;
+}
+.grid-item{
+    background-color: rgb(184, 182, 182);
+    margin: 1em 1em 0 0; 
+}
+.item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+.item2 {
+    grid-column: 1;
+    grid-row: 2;
+}.item3 {
+    grid-column: 1;
+    grid-row: 3;
+}.item4 {
+    grid-column: 1;
+    grid-row: 4;
+}
