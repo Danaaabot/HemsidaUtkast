@@ -3,9 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Oskar Andersson webbyrå</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script defer src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Oskar Andersson</h1>
+
+      <h2>Karlssons Webbyrå</h2>
+    </header>
+
+    <!--  Vue app för att göra ett bildspel  -->
+    <div class="slideshow">
+      <h2>Mina genomförda projekt:</h2>
+      <!-- En knapp som minskar index med 1 för att gå genom projekt, går den under lägsta index på array så loopar den om -->
+      <div class="buttonLayout">
+        <button class="leftButton" @click="previousProject()">
+          <span class="material-symbols-outlined"> arrow_back </span>
+        </button>
+        <!-- En knapp som ökar index för att gå genom projekt, överstiger den längden på array så loopar den om -->
+        <button class="rightButton" @click="nextProject()">
+          <span class="material-symbols-outlined"> arrow_forward </span>
+        </button>
+      </div>
+
+      <!-- Klass som hämtar ut alla projekt -->
+      <div class="projects" v-for="project in projects">
+        <!-- Om projekt id matchar vårat index (som default är 1) så visar den ett projekt -->
+        <div class="visibleProject" v-if="project.id === projectIndex">
+          <img class="projectImage" :src="project.imageUrl" />
+          <p class="summaryText">{{project.summary}}</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
