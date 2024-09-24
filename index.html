@@ -7,6 +7,7 @@
   <script defer src="script.js"></script>
   <link rel="stylesheet" href="style.css" />
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -47,28 +48,35 @@
       </p>
     </div>
 
-    <div class="grid-item item4">
-      <h3>Kontakta Oss</h3>
-      <p>
-        Är du redo att ta din digitala närvaro till nästa nivå? Kontakta oss
-        idag och låt oss diskutera hur vi kan hjälpa ditt företag att växa
-        online!
-      </p>
-      <form>
-        <!-- 3 st input element och 1 textarea element for att ta emot användarinfo, med skicka-knapp -->
-        <label for="user-name">Namn:</label>
-        <input type="text" name="user-name" id="user-name" required />
-        <br />
-        <label for="user-tel">Telefonummer:</label>
-        <input type="number" name="user-tel" id="user-tel" requried />
-        <br />
-        <label for="user-e">E-postadress:</label>
-        <input type="text" name="user-E" id="user-e" required />
-        <br />
-        <label for="user-message">Meddelande:</label>
-        <textarea id="user-message" name="user-message" rows="10" cols="100" required></textarea>
-        <input type="submit" name="submit-button" />
-      </form>
+    <div class="grid-item item4 HuvudContainer">
+      <ul class="HittaOssPåPlattformar">
+        <li id="HittaOss"><strong>HITTA OSS PÅ</strong></li>
+        <br/>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Linkedin</li>
+        <li>Twitter</li>
+      </ul>
+    
+        
+      
+        <form class="KontaktaOssSektion">
+          <h2 id="KontaktaOssText">Har du frågor eller vill du veta mer? Fyll i formuläret nedan, så återkommer vi till dig så snart som möjligt. </h3>
+          <!-- 3 st input element och 1 textarea element for att ta emot användarinfo, med skicka-knapp -->
+          <div class="InputFält">
+            <input type="text" name="user-name" id="user-name" placeholder="Namn" required />
+            <br />
+           
+            <input type="number" name="user-tel" id="user-tel" placeholder="Telefonummer" requried />
+            <br />
+         
+            <input type="text" name="user-E" id="user-e" placeholder="E-postadress" required />
+            <br />
+            
+            <textarea id="user-message" name="user-message" rows="10" cols="100" placeholder="Meddelande" required></textarea>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </body>
