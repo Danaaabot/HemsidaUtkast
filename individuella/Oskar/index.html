@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oskar Andersson webbyrå</title>
+    <title>Oskar Andersson portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -23,8 +23,32 @@
       <h2>Karlssons Webbyrå</h2>
     </header>
 
-    <!--  Vue app för att göra ett bildspel  -->
-    <div class="slideshow">
+    <div class="aboutme">
+      <h2>Om mig</h2>
+      <img src="https://placehold.co/300x200" alt="En bild på mig" />
+      <p class="introduction">
+        Jag är webbutvecklare på Karlssons Webbyrå, där jag utmärker mig genom
+        mitt tekniska kunnande och min kreativa vision. Med en stark bakgrund
+        inom både frontend- och backend-utveckling skapar jag dynamiska och
+        responsiva webbplatser som levererar en utmärkt användarupplevelse. Min
+        arbetsgivare har beskrivit mig som följande: "Oskar är känd för sin
+        förmåga att arbeta effektivt under press och hans lösningsorienterade
+        inställning gör honom till en oumbärlig del av teamet. Han håller sig
+        alltid uppdaterad med de senaste teknologierna och trenderna inom
+        webbutveckling, vilket gör att han kan erbjuda innovativa och hållbara
+        lösningar för varje projekt."
+      </p>
+      <p class="previousworks">
+        Innan jag arbetade på Karlssons Webbyrå arbetade jag som frilansande
+        webbutvecklare. De flesta projekten var mer i syfte av att hjälpa vänner
+        som bedrev egna projekt samtidigt som jag själv byggde ett portfolio.
+        Det skedde även en del kommunala arbeten där de behövde en professionell
+        hemsida utan budgeteringen av en större webbyrå. Nedan listar jag några
+        av mina projekt, tryck på pilarna för att bläddra genom!
+      </p>
+    </div>
+
+    <div class="projectslideshow">
       <h2>Mina genomförda projekt:</h2>
       <!-- En knapp som minskar index med 1 för att gå genom projekt, går den under lägsta index på array så loopar den om -->
       <div class="buttonLayout">
@@ -45,6 +69,22 @@
           <p class="summaryText">{{project.summary}}</p>
         </div>
       </div>
+    </div>
+
+    <div class="photography">
+      <h2>Fotografi</h2>
+      <p>
+        Utöver mitt arbete som webbutvecklare har jag ett stort fritidsintresse
+        för fotografi. Jag har alltid varit fascinerad av att fånga vackra
+        stunder på bild, men jag skulle säga att det största fokus ligger på att
+        ta bilder ute i naturen. Tänker även här infoga ett bildspel med några
+        av mina favoritbilder. Tryck på pilarna för att bläddra genom!
+      </p>
+      <img src="images/natur1.jpg" alt="" />
+      <img src="images/natur2.jpg" alt="" />
+      <img src="images/natur3.jpg" alt="" />
+      <img src="images/natur4.jpg" alt="" />
+      <img src="images/natur5.jpg" alt="" />
     </div>
   </body>
 </html>
