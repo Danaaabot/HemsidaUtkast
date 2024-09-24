@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #360023, #03000c, #05002e);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  header {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #ffffff;
+
+    margin-top: 10px;
+  }
+  
+  .slideshow {
+    text-align: center;
+    padding: 30px;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  .slideshow h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  
+  .buttonLayout {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .leftButton, .rightButton {
+    background-color: #ffffff;
+    border: none;
+    width: 60px;
+    height: 60px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .leftButton:hover, .rightButton:hover {
+    transform: scale(1.1);
+    background-color: #000e1d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .leftButton:active, .rightButton:active {
+    transform: scale(0.95);
+  }
+  
+  
+  .projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .visibleProject {
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .projectImage {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .projectImage:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .summaryText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #f0f0f0;
+  }
