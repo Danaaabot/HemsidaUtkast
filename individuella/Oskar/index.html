@@ -25,9 +25,7 @@
       </button>
       <ul class="menuItems">
         <li><a href="#aboutme">Om mig</a></li>
-        <br />
         <li><a href="#projectslideshow">Projekt</a></li>
-        <br />
         <li><a href="#photography">Fotografi</a></li>
       </ul>
     </header>
@@ -74,7 +72,7 @@
       <div class="projects" v-for="project in projects">
         <!-- Om projekt id matchar vårat index (som default är 1) så visar den ett projekt -->
         <div class="visibleProject" v-if="project.id === projectIndex">
-          <img class="projectImage" :src="project.imageUrl" />
+          <img class="projectImage" :src="project.imageUrl" alt="Projektbild" />
           <h3>Projekttitel: {{project.title}}</h3>
           <h4>Kund: {{project.customer}}</h4>
           <p class="summaryText">{{project.summary}}</p>
