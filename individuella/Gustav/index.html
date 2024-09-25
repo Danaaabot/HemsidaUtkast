@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gustav Berntsson</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Gustav Berntsson</h1>
+
+    </header>
+
+    <div class="slideshow">
+      <h2>Mina genomförda projekt:</h2>
+      <div class="buttonLayout">
+        <button class="leftButton" @click="previousProject()">
+          <span class="material-symbols-outlined"> arrow_back </span>
+        </button>
+        <button class="rightButton" @click="nextProject()">
+          <span class="material-symbols-outlined"> arrow_forward </span>
+        </button>
+      </div>
+
+      <div class="projects" v-for="project in projects">
+        <div class="visibleProject" v-if="project.id === projectIndex">
+          <img class="projectImage" :src="project.imageUrl" />
+          <p class="summaryText">{{project.summary}}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

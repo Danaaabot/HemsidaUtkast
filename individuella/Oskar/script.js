@@ -31,7 +31,7 @@ const slideshow = Vue.createApp({
   async mounted() {
     try {
       // Fetchar data från json-fil
-      const response = await fetch("./ta.json");
+      const response = await fetch("./data.json");
       const data = await response.json();
 
       this.projects = data;
@@ -40,4 +40,4 @@ const slideshow = Vue.createApp({
     }
   },
 });
-slideshow.mount(".slideshow");
+slideshow.mount(".projectslideshow");
