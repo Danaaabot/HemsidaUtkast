@@ -1,15 +1,36 @@
 header {
-    background-color: grey;
-    text-align: center;
-    padding: 2em;
+  text-align: center;
+  font-family: "Play", sans-serif;
+  background: linear-gradient(135deg, #000000, #1a0013, #030022);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #ffffff;
+  margin: 0;
+  padding: 1em;
+  overflow: hidden;
+  border-bottom: 1px groove #15001d;
 }
-#grid-container{
-    display: grid;
+
+#grid-container {
+  display: grid;
+  background-color: #000000;
+  padding: 1em;
 }
-.grid-item{
-    background-color: rgb(184, 182, 182);
-    margin: 1em 1em 0 0; 
+
+.grid-item {
+  background: linear-gradient(135deg, #240016, #01000b, #240016);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  margin: 0.25em;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
+
 .item1 {
   grid-column: 1;
   font-family: "Play", sans-serif;

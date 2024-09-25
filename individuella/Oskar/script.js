@@ -1,4 +1,4 @@
-const slideshow = Vue.createApp({
+const projectslideshow = Vue.createApp({
   data() {
     return {
       //Skapar en array för att ladda in projekten från json-fil
@@ -40,4 +40,44 @@ const slideshow = Vue.createApp({
     }
   },
 });
-slideshow.mount(".projectslideshow");
+projectslideshow.mount("#projectslideshow");
+
+function leftButtonEvent(slide = []) {
+  slide.forEach((img) => {
+    img.classList.toggle("active");
+  });
+}
+function slideshow() {
+  const leftButtonSlide = document.querySelector(".leftButtonSlide");
+  const rightButtonSlide = document.querySelector(".rightButtonSlide");
+  let index = 0;
+  const slide = document.querySelectorAll(".slide img");
+  const slideLength = slide.length;
+  leftButtonSlide.addEventListener("click", () => {
+    slide[index].classList.remove("active");
+    index -= 1;
+    if (index < 0) {
+      index = 4;
+    }
+    slide[index].classList.add("active");
+    console.log(index);
+  });
+  rightButtonSlide.addEventListener("click", () => {
+    slide[index].classList.remove("active");
+    index += 1;
+    if (index >= slideLength) {
+      index = 0;
+    }
+    slide[index].classList.add("active");
+    console.log(index);
+  });
+}
+
+slideshow();
+
+const menuButton = document.querySelector(".menuOpen");
+const menu = document.querySelector(".menuItems");
+
+menuButton.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
