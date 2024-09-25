@@ -73,11 +73,12 @@ header {
   grid-column: 4;
 }
 
+
+
 .grid-kontakta {
   display: grid;
   border:2px solid #d9d9d9; 
-  border-radius: 15px;
-  grid-template-columns: 300px 1075px;  
+  border-radius: 15px;  
 }
 
 .hittaOssPåPlattformar {
@@ -100,23 +101,17 @@ header {
   padding: 0; 
 }
 
-.grid-kontaktinfo h2 {
-    margin-top: 0;
-    padding-top: 14px;
-}
-
 #user-name, #user-tel, #user-e, #user-message{
-    border: 2px solid rgba(215, 32, 215, 0.529);
-    border-radius: 5px;
-    background-color: rgb(191, 191, 191);
-    width: 500px;
-    margin-top: 4px;
+  border: 2px solid rgba(215, 32, 215, 0.529);
+  border-radius: 5px;
+  background-color: rgb(191, 191, 191);
+  width: 500px;
+  margin-top: 4px;
 }
 
 #user-name:hover, #user-tel:hover, #user-e:hover, #user-message:hover {
   background-color: white;
 }
-
 
 #user-name::placeholder, #user-tel::placeholder, #user-e::placeholder, #user-message::placeholder {
   color: rgb(34, 34, 34);
@@ -125,8 +120,4 @@ header {
 #user-name, #user-tel, #user-e{
     height: 20px;
 }
-
-
-
-
 
