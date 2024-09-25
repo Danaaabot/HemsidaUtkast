@@ -46,3 +46,28 @@ header {
     grid-column: 1;
     grid-row: 4;
 }
+
+#grid-anstallda {
+  display: grid;
+}
+.grid-anstalld {
+  margin: 1em 1em 0 0;
+  width: 300px;
+  text-align: center;
+  padding-left: 20px;
+}
+.grid-anstalld img:hover {
+  border: 5px solid brown;
+}
+.dana {
+  grid-column: 1;
+}
+.gustav {
+  grid-column: 2;
+}
+.joel {
+  grid-column: 3;
+}
+.oskar {
+  grid-column: 4;
+}
