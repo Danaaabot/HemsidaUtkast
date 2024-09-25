@@ -1,22 +1,37 @@
 [
   {
     "id": 1,
-    "summary": "Skapade en hemsida åt en friskola som desperat behövde en uppdatering, sidan är responsiv och har en enkel design.",
+    "title": "Skolhemsida",
+    "customer": "Skellefteå Kommun",
+    "summary": "Skapade en hemsida åt en skola i Skellefteå som desperat behövde en uppdatering, sidan är responsiv och har en enkel design.",
     "imageUrl": "images/image1.jpg"
   },
   {
     "id": 2,
-    "summary": "Fick ett uppdrag att uppdatera en kompis hemsida där han bedriver försäljning av parfymer, sidan är uppbyggd med HTML, CSS och JavaScript.",
+    "title": "Parfymförsäljning",
+    "customer": "Parfym.se",
+    "summary": "Fick ett uppdrag att skapa en hemsida åt en barndomsvän där han bedriver försäljning av parfymer, sidan är uppbyggd med HTML, CSS och JavaScript.",
     "imageUrl": "images/image2.jpg"
   },
   {
     "id": 3,
-    "summary": "Back in Black",
-    "imageUrl": "https://via.placeholder.com/150/E0D0C1"
+    "title": "Säkerhet",
+    "customer": "Mr Green",
+    "summary": "Mr Green ville säkerställa att deras hemsida var säker från SQL injektioner, jag fick kolla igenom deras kod för att säkerställa att inga sådana injektioner var möjliga.",
+    "imageUrl": "images/image3.jpg"
   },
   {
     "id": 4,
-    "summary": "Rumours",
-    "imageUrl": "https://via.placeholder.com/150/601700"
+    "title": "Bokningssystem",
+    "customer": "Kungliga Operan",
+    "summary": "Kungliga Operan i Stockholm ville implementera ett bokningssystem på sin hemsida, jag fick uppdraget att skapa det på ett sätt som skulle vara enkelt för användaren att använda.",
+    "imageUrl": "images/image4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "E-handel",
+    "customer": "H&M",
+    "summary": "H&M ändrade koncept på deras webbhandel, vilket gjorde mig ansvarig för att fixa ett tema som stämde överens med konceptet.",
+    "imageUrl": "images/image5.jpg"
   }
 ]

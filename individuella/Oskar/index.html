@@ -19,11 +19,20 @@
   <body>
     <header>
       <h1>Oskar Andersson</h1>
-
       <h2>Karlssons Webbyrå</h2>
+      <button class="menuOpen">
+        <span class="material-symbols-outlined"> menu </span> <br />
+      </button>
+      <ul class="menuItems">
+        <li><a href="#aboutme">Om mig</a></li>
+        <br />
+        <li><a href="#projectslideshow">Projekt</a></li>
+        <br />
+        <li><a href="#photography">Fotografi</a></li>
+      </ul>
     </header>
 
-    <div class="aboutme">
+    <div id="aboutme">
       <h2>Om mig</h2>
       <img src="https://placehold.co/300x200" alt="En bild på mig" />
       <p class="introduction">
@@ -48,15 +57,15 @@
       </p>
     </div>
 
-    <div class="projectslideshow">
+    <div id="projectslideshow">
       <h2>Mina genomförda projekt:</h2>
       <!-- En knapp som minskar index med 1 för att gå genom projekt, går den under lägsta index på array så loopar den om -->
       <div class="buttonLayout">
-        <button class="leftButton" @click="previousProject()">
+        <button class="leftButtonProject" @click="previousProject()">
           <span class="material-symbols-outlined"> arrow_back </span>
         </button>
         <!-- En knapp som ökar index för att gå genom projekt, överstiger den längden på array så loopar den om -->
-        <button class="rightButton" @click="nextProject()">
+        <button class="rightButtonProject" @click="nextProject()">
           <span class="material-symbols-outlined"> arrow_forward </span>
         </button>
       </div>
@@ -66,25 +75,42 @@
         <!-- Om projekt id matchar vårat index (som default är 1) så visar den ett projekt -->
         <div class="visibleProject" v-if="project.id === projectIndex">
           <img class="projectImage" :src="project.imageUrl" />
+          <h3>Projekttitel: {{project.title}}</h3>
+          <h4>Kund: {{project.customer}}</h4>
           <p class="summaryText">{{project.summary}}</p>
         </div>
       </div>
     </div>
 
-    <div class="photography">
+    <div id="photography">
       <h2>Fotografi</h2>
       <p>
         Utöver mitt arbete som webbutvecklare har jag ett stort fritidsintresse
-        för fotografi. Jag har alltid varit fascinerad av att fånga vackra
-        stunder på bild, men jag skulle säga att det största fokus ligger på att
-        ta bilder ute i naturen. Tänker även här infoga ett bildspel med några
-        av mina favoritbilder. Tryck på pilarna för att bläddra genom!
+        för fotografi.
       </p>
-      <img src="images/natur1.jpg" alt="" />
+      <p>
+        Jag har alltid varit fascinerad av att fånga vackra stunder på bild, men
+        jag skulle säga att det största fokus ligger på att ta bilder ute i
+        naturen.
+      </p>
+      <p>
+        även här infoga ett bildspel med några av mina favoritbilder. Tryck på
+        pilarna för att bläddra genom!
+      </p>
+    </div>
+    <div class="slide">
+      <button class="leftButtonSlide">
+        <span class="material-symbols-outlined"> arrow_back </span>
+      </button>
+
+      <img class="active" src="images/natur1.jpg" alt="" />
       <img src="images/natur2.jpg" alt="" />
       <img src="images/natur3.jpg" alt="" />
       <img src="images/natur4.jpg" alt="" />
       <img src="images/natur5.jpg" alt="" />
+      <button class="rightButtonSlide">
+        <span class="material-symbols-outlined"> arrow_forward </span>
+      </button>
     </div>
   </body>
 </html>
