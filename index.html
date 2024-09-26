@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script defer src="script.js"></script>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -16,23 +17,40 @@
 
     <div id="grid-container">
       <div class="grid-item item1">
-        <h1>Om Oss</h1>
-        <p>
-          Välkommen till Karlssons Web, din pålitliga partner för alla dina
-          digitala behov!<br />
-          Vi är en engagerad webbyrå med passion för att skapa moderna,
-          användarvänliga och skräddarsydda webbplatser som hjälper ditt företag
-          att nå sin fulla potential online.
-        </p>
+          <!--Del 1: Om oss-->
+        <div class="grid-presentation">
+          <div class="presentation-item pItem-1">
+            <h1>Om Oss</h1>
+            <p>
+              Välkommen till Karlssons Web, din pålitliga partner för alla dina
+              digitala behov!<br />
+              Vi är en engagerad webbyrå med passion för att skapa moderna,
+              användarvänliga och skräddarsydda webbplatser som hjälper ditt företag
+              att nå sin fulla potential online.
+            </p>
+          </div>
+          <div class="presentation-item pItem-2">
+            <img src="https://placehold.co/400x200" alt="en bild på något">
+          </div>
+         
+        </div>
       </div>
       <div class="grid-item item2">
-        <h2>Vår Vision</h2>
-        <p>
-          På Karlssons Web strävar vi efter att förvandla dina idéer till
-          verklighet. Vi tror på kraften av en stark digital närvaro och arbetar
-          målmedvetet för att ge våra kunder de verktyg och lösningar de behöver
-          för att lyckas på nätet.
-        </p>
+        <!--Del 2: Vår vison-->
+        <div class="grid-presentation">
+          <div class="presentation-item pItem-4">
+            <h2>Vår Vision</h2>
+            <p>
+              På Karlssons Web strävar vi efter att förvandla dina idéer till
+              verklighet. Vi tror på kraften av en stark digital närvaro och arbetar
+              målmedvetet för att ge våra kunder de verktyg och lösningar de behöver
+              för att lyckas på nätet.
+            </p>
+          </div>
+          <div class="presentation-item pItem-3">
+            <img src="https://placehold.co/400x200" alt="en bild på något">
+          </div>
+      </div>
       </div>
 
       <div class="grid-item item3">
@@ -121,28 +139,39 @@
         </div>
       </div>
 
-    <div class="grid-item item4">
-      <h3>Kontakta Oss</h3>
-      <p>
-        Är du redo att ta din digitala närvaro till nästa nivå? Kontakta oss
-        idag och låt oss diskutera hur vi kan hjälpa ditt företag att växa
-        online!
-      </p>
-      <form>
-        <!-- 3 st input element och 1 textarea element for att ta emot användarinfo, med skicka-knapp -->
-        <label for="user-name">Namn:</label>
-        <input type="text" name="user-name" id="user-name" required />
-        <br />
-        <label for="user-tel">Telefonummer:</label>
-        <input type="number" name="user-tel" id="user-tel" requried />
-        <br />
-        <label for="user-e">E-postadress:</label>
-        <input type="text" name="user-E" id="user-e" required />
-        <br />
-        <label for="user-message">Meddelande:</label>
-        <textarea id="user-message" name="user-message" rows="10" cols="100" required></textarea>
-        <input type="submit" name="submit-button" />
-      </form>
+      <div class="container">
+      <div class="grid-item item4">
+        <div class="grid-kontakta">
+          <ul class="hittaOssPåPlattformar">
+            <li><strong>HITTA OSS PÅ</strong></li>
+            <br/>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Linkedin</li>
+            <li>Twitter</li>
+          </ul>
+          <form class="grid-kontaktinfo">
+            <h2>Har du frågor eller vill du veta mer? Fyll i formuläret nedan, så återkommer vi till dig så snart som möjligt. </h2>
+          
+            <!-- 3 st input element och 1 textarea element for att ta emot användarinfo, med skicka-knapp -->
+            
+              <input type="text" name="user-name" id="user-name" placeholder="Namn" required />
+              <br />
+            
+              <input type="number" name="user-tel" id="user-tel" placeholder="Telefonummer" required />
+              <br />
+          
+              <input type="text" name="user-E" id="user-e" placeholder="E-postadress" required />
+              <br />
+              
+              <textarea id="user-message" name="user-message" rows="10" cols="100" placeholder="Meddelande" required></textarea>
+            
+          </form>
+       </div>
+      </div>
+      </div>
+    
+
     </div>
   </div>
 </body>
