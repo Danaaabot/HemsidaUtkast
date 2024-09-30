@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function inputValidering() {
 
     // Validering av telefon input-objektet
     telInput.addEventListener("input", function() {
-        const phonePattern = /^[0-9+-]+$/; // Endast siffror
+        const phonePattern = /^07\d{1,2}[- ]?\d{6,7}$/; // Endast siffror
  
         telInput.classList.remove("valid", "invalid");
         
