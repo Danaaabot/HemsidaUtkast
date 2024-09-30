@@ -128,7 +128,7 @@
           </div>
           <div class="grid-anstalld oskar">
             <a href="/individuella/Oskar/index.html"
-              ><img src="https://placehold.co/300x200" alt="En bild på Oskar"
+              ><img xssrc="https://placehold.co/300x200" alt="En bild på Oskar"
             /></a>
             <h2>Oskar</h2>
             <p>
@@ -147,41 +147,33 @@
         </div>
       </div>
 
-      <div class="container">
+     
       <div class="grid-item item4">
         <div class="grid-kontakta">
-          <ul class="hittaOssPåPlattformar">
-            <li><strong>HITTA OSS PÅ</strong></li>
-            <br/>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-            <li>Twitter</li>
-          </ul>
           <form class="grid-kontaktinfo">
             <h2>Har du frågor eller vill du veta mer? Fyll i formuläret nedan, så återkommer vi till dig så snart som möjligt. </h2>
+        
+            <input type="text" name="user-name" id="user-name" placeholder="Namn" required />
+            <br />
+            
+            <input type="number" name="user-tel" id="user-tel" placeholder="Telefonummer" required />
+            <br />
           
-            <!-- 3 st input element och 1 textarea element for att ta emot användarinfo, med skicka-knapp -->
+            <input type="text" name="user-e" id="user-e" placeholder="E-postadress" required />
+            <br />
             
-              <input type="text" name="user-name" id="user-name" placeholder="Namn" required />
-              <br />
-            
-              <input type="number" name="user-tel" id="user-tel" placeholder="Telefonummer" required />
-              <br />
+            <textarea id="user-message" name="user-message" rows="10" cols="100" placeholder="Meddelande" required></textarea>
+        </form>
+        
           
-              <input type="text" name="user-E" id="user-e" placeholder="E-postadress" required />
-              <br />
-              
-              <textarea id="user-message" name="user-message" rows="10" cols="100" placeholder="Meddelande" required></textarea>
-            
-          </form>
        </div>
       </div>
-      </div>
+      
     
 
     </div>
-  </div>
+    
+  
 </body>
 
 </html>

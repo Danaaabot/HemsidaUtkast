@@ -101,8 +101,6 @@ header {
   justify-content: center;
 }
 
-
-
 .grid-anstalld {
   margin: 1em 1em 0 0;
   width: 300px;
@@ -112,40 +110,20 @@ header {
 .grid-anstalld img:hover {
   border: 5px solid brown;
 }
-
-.grid-kontakta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 2px solid #d9d9d9;
-  border-radius: 15px;
-  height: 100%;
-  position: relative;
+.dana {
+  grid-column: 1;
 }
-
-.hittaOssPåPlattformar {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  list-style-type: none !important;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  padding: 0;
-}
-
-.grid-kontaktinfo {
+.gustav {
   grid-column: 2;
-  text-align: center;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 20px;
-  padding: 0; 
+}
+.joel {
+  grid-column: 3;
+}
+.oskar {
+  grid-column: 4;
 }
 
 #user-name, #user-tel, #user-e, #user-message{
-  border: 2px solid rgba(215, 32, 215, 0.529);
   border-radius: 5px;
   background-color: rgb(191, 191, 191);
   width: 500px;
@@ -162,6 +140,14 @@ header {
 
 #user-name, #user-tel, #user-e{
     height: 20px;
+}
+
+.valid{
+  border: 2px solid green;
+}
+
+.invalid {
+  border: 2px solid red;
 }
 
 @media only screen and (min-width:800px){
