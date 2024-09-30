@@ -22,6 +22,9 @@
 
     </header>
 
+    <div class = "ommig">Jag är en engagerad IT-utvecklare med 5 års erfarenhet inom mjukvaruutveckling, med särskilt fokus på backend-programmering och dataanalys. Expert på att bygga robusta och skalbara system med moderna tekniker som Python, Java och SQL. Har en stark analytisk förmåga och använder data för att optimera prestanda och skapa insikter. Van att arbeta både i team och självständigt, med god förståelse för DevOps-principer och agil metodik. Driven av en passion för teknik och ständig utveckling, med en strävan att alltid leverera högkvalitativa lösningar.
+    </div>
+
     <div class="slideshow">
       <h2>Mina genomförda projekt:</h2>
       <div class="buttonLayout">
@@ -36,8 +39,10 @@
       <div class="projects" v-for="project in projects">
         <div class="visibleProject" v-if="project.id === projectIndex">
           <img class="projectImage" :src="project.imageUrl" />
+          <p class="headerText">{{project.head}}</p>
           <p class="summaryText">{{project.summary}}</p>
         </div>
+        
       </div>
     </div>
   </body>
