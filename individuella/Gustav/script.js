@@ -6,6 +6,11 @@ const slideshow = Vue.createApp({
       };
     },
     methods: {
+
+      goBack () {
+        history.back()
+      },
+      
       nextProject() {
         if (this.projectIndex >= this.projects.length) {
           this.projectIndex = 1;

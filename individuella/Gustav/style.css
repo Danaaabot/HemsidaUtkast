@@ -27,6 +27,24 @@ body {
     color: #ffffff;
     margin: 0;
   }
+
+  button.tillbaka {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: lightskyblue;
+    border: none;
+    cursor: pointer;
+}
+
+button.tillbaka span {
+  font-size: 14px; /* Ändra ikonen till en lämplig storlek */
+}
+
+button.tillbaka:hover {
+  background-color: #1b0034; /* Ändra färgen på hover för bättre användarupplevelse */
+}
   
   header h2 {
     font-family: 'Poppins', sans-serif;
