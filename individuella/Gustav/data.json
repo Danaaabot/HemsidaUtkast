@@ -3,30 +3,30 @@
       "id": 1,
       "head": "Migrering till molnarkitektur",
       "summary": "Ledde ett projekt för att migrera ett internt system till AWS, inklusive omstrukturering av backend och databas för att dra nytta av molntjänster som S3 och Lambda.",
-      "imageUrl": "https://www.thoughtco.com/thmb/khHLwWbJszC3N3603jBHCg1fT9w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/microchip-5c424d634cedfd0001cc73f0.png"
+      "imageUrl": "images/image1.png"
     },
     {
       "id": 2,
       "head": "Automatisering av serverövervakning.",
       "summary": "Byggde en skräddarsydd övervakningslösning med Python och Prometheus för att automatiskt logga och analysera serverprestanda och upptäcka flaskhalsar.",
-      "imageUrl": "https://www.sourcesecurity.com/img/news/920/ip-server-adaption-video-surveillance-920.jpg"
+      "imageUrl": "images/image2.jpg"
     },
     {
       "id": 3,
       "head": "Optimering av databasprestanda",
       "summary": "Förbättrade prestandan i en MySQL-databas genom att omstrukturera index och optimera queries, vilket resulterade i 30% snabbare svarstider.",
-      "imageUrl": "https://www.loadview-testing.com/wp-content/uploads/database-performance-issues-scaled.jpeg"
+      "imageUrl": "images/image3.jpeg"
     },
     {
       "id": 4,
       "head": "Utveckling av API för e-handelsplattform",
       "summary": "Skapade ett skalbart RESTful API i Python med Flask, som hanterar produktdata och beställningar för en större e-handelslösning.",
-      "imageUrl": "https://media.viskan.com/v2/viskanprod/normal/framtidens-e-handelsplattform-for-vaxande-e-handelsforetag-mob.png"
+      "imageUrl": "images/image4.webp"
     },
     {
       "id": 5,
       "head": "Dataanalys för kundbeteende",
       "summary": "Implementerade en dataanalyslösning med hjälp av Pandas och SQL för att analysera kundbeteende och generera affärsinsikter från stora datamängder.",
-      "imageUrl": "https://www.theagilityeffect.com/app/uploads/2020/10/00_VINCI-ICONOGRAPHIE_1280x680-551986071.jpg"
+      "imageUrl": "images/image5.jpg"
     }
   ]
