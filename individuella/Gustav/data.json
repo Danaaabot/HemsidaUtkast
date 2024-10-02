@@ -1,22 +1,32 @@
 [
     {
       "id": 1,
-      "summary": "Skapade en onlyfans åt en björn",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ours_brun_parcanimalierpyrenees_1.jpg"
+      "head": "Migrering till molnarkitektur",
+      "summary": "Ledde ett projekt för att migrera ett internt system till AWS, inklusive omstrukturering av backend och databas för att dra nytta av molntjänster som S3 och Lambda.",
+      "imageUrl": "images/image1.png"
     },
     {
       "id": 2,
-      "summary": "Skapade en onlyfans åt en björn.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ours_brun_parcanimalierpyrenees_1.jpg"
+      "head": "Automatisering av serverövervakning.",
+      "summary": "Byggde en skräddarsydd övervakningslösning med Python och Prometheus för att automatiskt logga och analysera serverprestanda och upptäcka flaskhalsar.",
+      "imageUrl": "images/image2.jpg"
     },
     {
       "id": 3,
-      "summary": "Skapade en onlyfans åt en björn",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ours_brun_parcanimalierpyrenees_1.jpg"
+      "head": "Optimering av databasprestanda",
+      "summary": "Förbättrade prestandan i en MySQL-databas genom att omstrukturera index och optimera queries, vilket resulterade i 30% snabbare svarstider.",
+      "imageUrl": "images/image3.jpeg"
     },
     {
       "id": 4,
-      "summary": "Skapade en onlyfans åt en björn",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ours_brun_parcanimalierpyrenees_1.jpg"
+      "head": "Utveckling av API för e-handelsplattform",
+      "summary": "Skapade ett skalbart RESTful API i Python med Flask, som hanterar produktdata och beställningar för en större e-handelslösning.",
+      "imageUrl": "images/image4.webp"
+    },
+    {
+      "id": 5,
+      "head": "Dataanalys för kundbeteende",
+      "summary": "Implementerade en dataanalyslösning med hjälp av Pandas och SQL för att analysera kundbeteende och generera affärsinsikter från stora datamängder.",
+      "imageUrl": "images/image5.jpg"
     }
   ]

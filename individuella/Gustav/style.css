@@ -1,117 +1,222 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #360023, #03000c, #05002e);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  header {
-    background-color: transparent;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
-    color: #ffffff;
-    margin: 0;
-  }
-  
-  header h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0c0024, #03000c, #05002e);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
 
-    margin-top: 10px;
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  color: #ffffff;
+  margin: 0;
+}
+
+button.tillbaka {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #3895a5, #a7eee2, #230227);
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+button.tillbaka span {
+  font-size: 14px;
+}
+
+button.tillbaka:hover {
+  background: linear-gradient(135deg, #a53838, #00ffb3, #230227);
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ommig {
+  text-align: center;
+  padding: 30px;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.slideshow {
+  text-align: center;
+  padding: 30px;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.slideshow h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.buttonLayout {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.leftButton, .rightButton {
+  background-color: #ffffff;
+  border: none;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #a2dae4, #8db1da, #230227);
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.leftButton:hover, .rightButton:hover {
+  transform: scale(1.1);
+  background-color: #000e1d;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leftButton:active, .rightButton:active {
+  transform: scale(0.95);
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.visibleProject {
+  max-width: 500px;
+  text-align: center;
+}
+
+.projectImage {
+  max-width: 100%;
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projectImage:hover {
+  transform: scale(1.05);
+}
+
+.head {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #f0f0f0;
+}
+
+.summaryText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #f0f0f0;
+}
+
+@media (max-width: 390px) and (max-height: 844px) {
+  header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
   }
-  
-  .slideshow {
-    text-align: center;
-    padding: 30px;
-    backdrop-filter: blur(20px);
-    border-radius: 15px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+
+  header h1 {
+      font-size: 2em; 
+      margin: 0; 
   }
-  
-  .slideshow h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2em;
-    color: #fff;
-    margin-bottom: 20px;
+
+  button.tillbaka {
+      margin-top: 20px;
+      margin-left: 165px;
+      padding: 8px 10px; 
+      background-color: rgb(223, 245, 241); 
+      border-radius: 5px;
+      border: none; 
   }
-  
-  
+
+  button.tillbaka span {
+      font-size: 12px;
+  }
+
+  .ommig {
+      font-size: 0.8em;
+  }
+
+  h2 {
+      font-size: 1.5em;
+      margin-top: 25px;
+      margin-bottom: 0;
+      text-align: center;
+  }
+
+  .ommig {
+      margin-top: 5px;
+      margin-bottom: 20px;
+  }
+
   .buttonLayout {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
+      gap: 15px;
   }
-  
-  .leftButton, .rightButton {
-    background-color: #ffffff;
-    border: none;
-    width: 60px;
-    height: 60px;
-    color: #333;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-  }
-  
-  .leftButton:hover, .rightButton:hover {
-    transform: scale(1.1);
-    background-color: #000e1d;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .leftButton:active, .rightButton:active {
-    transform: scale(0.95);
-  }
-  
-  
-  .projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .visibleProject {
-    max-width: 500px;
-    text-align: center;
-  }
-  
+
   .projectImage {
-    max-width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+      height: auto;
   }
-  
-  .projectImage:hover {
-    transform: scale(1.05);
+
+  .head, .summaryText {
+      font-size: 0.7em;
+      margin-top: 10px;
   }
-  
-  
-  .summaryText {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
-    margin-top: 15px;
-    color: #f0f0f0;
+
+  .leftButton, .rightButton {
+      background-color: #ffffff;
+      border: none;
+      width: 40px;
+      height: 40px;
+      color: #333;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
   }
+}
