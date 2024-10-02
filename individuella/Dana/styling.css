@@ -1,0 +1,74 @@
+
+body {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); /* Dela in i 4 rader */
+    height: 100vh; /* Full höjd på sidan */
+    align-items: center; /* Centrerar griditems vertikalt, staplade*/
+    justify-items: center; /* Centrerar innehållet inuti varje griditem  */
+    background-color: #a2cefe32; /* Bakgrundsfärg */
+}
+
+.grid-item {
+    background-color: #a2cefe32; /* Bakgrundsfärg för grid items */
+    border: 5px solid #A2CFFE; /* Ram för grid items */
+    padding: 2em; /* Inre marginal */
+    width: 100%; /* Bredd av grid items */
+    text-align: center; /* Centrera texten inuti grid items */
+}
+
+h2 {
+    margin: 0 0 10px 0; /* Marginaler för rubriker */
+}
+
+
+
+header {
+    text-align: start;
+    background-color:#A2CFFE;
+    padding: 40px;
+}
+
+.anpassabild {
+    max-width: 100%;
+    height: auto; /*ändrar höjden med viewporten, men behåller original höjdens effekt ( bilden ser fint ut)*/
+}
+
+.storrubrik {
+    font-size: 50px;
+}
+
+.ommigtext {
+    font-size: 30px;
+}
+
+#checkbox {
+    display: none; /* Hidden by default */
+    
+}
+
+.menyikon {
+    display: none; /* Hidden by default */
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        color: grey;
+    }
+    .menyikon {
+        display: block;
+    }
+    .menyul {
+        display: none;
+    } 
+    .checkbox:checked + .menyikon + .menyul { /* bara menyul får stylingen när checkboxen klickas, menyikon utgör bridge mellan dem*/
+        display: block; 
+    }
+}
+
+button {
+    font-size: 30px;
+}
