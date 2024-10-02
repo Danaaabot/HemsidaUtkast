@@ -20,7 +20,9 @@ header h1,
 header h2 {
   text-align: right;
 }
-
+#huvudprojekt {
+  display: block;
+}
 header .material-symbols-outlined {
   text-align: left;
 }
