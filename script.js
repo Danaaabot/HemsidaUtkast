@@ -54,4 +54,12 @@ document.addEventListener("DOMContentLoaded", function inputValidering() {
             messageInput.classList.add("valid"); 
         }
     });
+
 });
+   const menuButton = document.querySelector(".menyknapp");
+   const menu = document.querySelector(".huvudmeny");
+
+   menuButton.addEventListener("click", () => {
+   menu.classList.toggle("active");
+});
+
