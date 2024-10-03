@@ -18,19 +18,23 @@
   <body>
     <header>
       <h1>Gustav Berntsson</h1>
-      <a href="../../index.html">
-        <button class="tillbaka">
-          <span class="material-symbols-outlined">arrow_back</span>
-        </button>
-      </a>
+      <button class="menyknapp">
+        <span class="material-symbols-outlined"> menu </span> <br />
+      </button>
+      <ul class="huvudmeny">
+        <li><a href="#ommig">Om mig</a></li>
+        <li><a href="#slideshow">Projekt</a></li>
+        <li><a href="../../index.html">Tillbaka</a></li>
+      </ul>
     </header>
 
+    <img src="/images/person2.png" alt="En bild på mig" />
     <h2>Om mig</h2>
-    <div class="ommig">
+    <div id="ommig" class="ommig">
       Jag är en engagerad IT-utvecklare med 5 års erfarenhet inom mjukvaruutveckling, med särskilt fokus på backend-programmering och dataanalys. Expert på att bygga robusta och skalbara system med moderna tekniker som Python, Java och SQL. Har en stark analytisk förmåga och använder data för att optimera prestanda och skapa insikter. Van att arbeta både i team och självständigt, med god förståelse för DevOps-principer och agil metodik. Driven av en passion för teknik och ständig utveckling, med en strävan att alltid leverera högkvalitativa lösningar.
     </div>
 
-    <div class="slideshow">
+    <div id="slideshow" class="slideshow">
       <h2>Mina genomförda projekt:</h2>
       <div class="buttonLayout">
         <button class="leftButton" @click="previousProject()">

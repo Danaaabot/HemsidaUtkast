@@ -45,3 +45,9 @@ const slideshow = Vue.createApp({
     },
   });
   slideshow.mount(".slideshow");
+
+   const menuButton = document.querySelector(".menyknapp");
+   const menu = document.querySelector(".huvudmeny");
+
+   menuButton.addEventListener("click", () => {
+   menu.classList.toggle("active");});
