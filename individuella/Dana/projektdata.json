@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "titel": "Introduktion till Vue.js",
+        "beskrivning": "En grundläggande artikel som introducerar Vue.js.",
+        "kund": "Kund A",
+        "ar": "2023"
+    },
+    {
+        "id": 2,
+        "titel": "Avancerade Vue-tekniker",
+        "beskrivning": "En artikel om avancerade tekniker och mönster i Vue.js.",
+        "kund": "Kund B",
+        "ar": "2023"
+    },
+    {
+        "id": 3,
+        "titel": "Vue.js och API-integration",
+        "beskrivning": "Så här integrerar du Vue.js med externa API:er.",
+        "kund": "Kund C",
+        "ar": "2023"
+    },
+    {
+        "id": 4,
+        "titel": "Bygga komponenter i Vue",
+        "beskrivning": "En artikel som beskriver hur man bygger återanvändbara komponenter.",
+        "kund": "Kund D",
+        "ar": "2023"
+    },
+    {
+        "id": 5,
+        "titel": "State Management i Vue",
+        "beskrivning": "Lär dig om state management med Vuex i Vue.js.",
+        "kund": "Kund E",
+        "ar": "2023"
+    }
+]
