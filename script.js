@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function inputValidering() {
 
     // Validering av telefon input-objektet
     telInput.addEventListener("input", function() {
-        const phonePattern = /^[0-9+-]+$/; // Endast siffror
+        const phonePattern = /^07\d{1,2}[- ]?\d{6,7}$/; // Endast siffror
  
         telInput.classList.remove("valid", "invalid");
         
@@ -54,4 +54,12 @@ document.addEventListener("DOMContentLoaded", function inputValidering() {
             messageInput.classList.add("valid"); 
         }
     });
+
 });
+   const menuButton = document.querySelector(".menyknapp");
+   const menu = document.querySelector(".huvudmeny");
+
+   menuButton.addEventListener("click", () => {
+   menu.classList.toggle("active");
+});
+
