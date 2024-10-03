@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,23 +15,35 @@
     />
     <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script defer src="script.js"></script>
+    <script defer src="vue.js"></script>
   </head>
   <body>
     <header>
       <h1>Gustav Berntsson</h1>
-      <a href="../../index.html">
-        <button class="tillbaka">
-          <span class="material-symbols-outlined">arrow_back</span>
-        </button>
-      </a>
+      <button class="menyknapp">
+        <span class="material-symbols-outlined"> menu </span> <br />
+      </button>
+      <ul class="huvudmeny">
+        <li><a href="#ommig">Om mig</a></li>
+        <li><a href="#slideshow">Projekt</a></li>
+        <li><a href="#art">Konst</a></li>
+        <li><a href="../../index.html">Tillbaka</a></li>
+      </ul>
     </header>
 
+    <img src="/images/person2.png" alt="En bild på mig" />
     <h2>Om mig</h2>
-    <div class="ommig">
-      Jag är en engagerad IT-utvecklare med 5 års erfarenhet inom mjukvaruutveckling, med särskilt fokus på backend-programmering och dataanalys. Expert på att bygga robusta och skalbara system med moderna tekniker som Python, Java och SQL. Har en stark analytisk förmåga och använder data för att optimera prestanda och skapa insikter. Van att arbeta både i team och självständigt, med god förståelse för DevOps-principer och agil metodik. Driven av en passion för teknik och ständig utveckling, med en strävan att alltid leverera högkvalitativa lösningar.
+    <div id="ommig" class="ommig">
+      Jag är en engagerad IT-utvecklare med 5 års erfarenhet inom mjukvaruutveckling, med
+      särskilt fokus på backend-programmering och dataanalys. Expert på att bygga robusta och
+      skalbara system med moderna tekniker som Python, Java och SQL. Har en stark analytisk
+      förmåga och använder data för att optimera prestanda och skapa insikter. Van att arbeta
+      både i team och självständigt, med god förståelse för DevOps-principer och agil metodik.
+      Driven av en passion för teknik och ständig utveckling, med en strävan att alltid
+      leverera högkvalitativa lösningar.
     </div>
 
-    <div class="slideshow">
+    <div id="slideshow" class="slideshow">
       <h2>Mina genomförda projekt:</h2>
       <div class="buttonLayout">
         <button class="leftButton" @click="previousProject()">
@@ -43,11 +56,33 @@
 
       <div class="projects" v-for="project in projects">
         <div class="visibleProject" v-if="project.id === projectIndex">
-          <img class="projectImage" :src="project.imageUrl" />
-          <p class="headerText">{{project.head}}</p>
-          <p class="summaryText">{{project.summary}}</p>
+          <img class="projectImage" :src="project.imageUrl" alt="projektbild" />
+          <p class="headerText">{{ project.head }}</p>
+          <p class="summaryText">{{ project.summary }}</p>
         </div>
       </div>
+    </div>
+
+    <div id="art">
+      <h2>Konst</h2>
+      <div id="konsttext" class="konsttext">
+        På fritiden ägnar jag mig åt digital konst. Här är några exempel på konstverk jag skapat.
+      </div>
+    </div>
+
+    <div class="artImages">
+      <button class="leftButtonArt">
+        <span class="material-symbols-outlined"> arrow_back </span>
+      </button>
+
+      <img class="active" src="images/art1.jpeg" alt="konstbilder" />
+      <img src="images/art1.jpeg" alt="" />
+      <img src="images/art2.jpg" alt="" />
+      <img src="images/art3.jpg" alt="" />
+
+      <button class="rightButtonArt">
+        <span class="material-symbols-outlined"> arrow_forward </span>
+      </button>
     </div>
   </body>
 </html>
