@@ -1,53 +1,35 @@
-const slideshow = Vue.createApp({
-    data() {
-      return {
-        projects: [],
-        projectIndex: 1,
-      };
-    },
-    methods: {
-
-      goBack () {
-        history.back()
-      },
-      
-      nextProject() {
-        if (this.projectIndex >= this.projects.length) {
-          this.projectIndex = 1;
-          
-        } else {
-
-          this.projectIndex++;
-        }
-      },
+document.addEventListener("DOMContentLoaded", function () {
+    const leftButtonSlide = document.querySelector(".leftButtonArt");
+    const rightButtonSlide = document.querySelector(".rightButtonArt");
+    let index = 0;
+    const slide = document.querySelectorAll(".artImages img");
+    const slideLength = slide.length;
   
-      
-      previousProject() {
-        
-        if (this.projectIndex > 1) {
-          this.projectIndex = this.projectIndex - 1;
-        } 
-        else {
-          this.projectIndex = this.projects.length;
-        }
-      },
-    },
-    async mounted() {
-      try {
-        
-        const response = await fetch("data.json");
-        const data = await response.json();
-  
-        this.projects = data;
-      } catch (error) {
-        console.error("Lyckades inte ladda in projekt", error);
+    leftButtonSlide.addEventListener("click", () => {
+      slide[index].classList.remove("active");
+      index -= 1;
+      if (index < 0) {
+        index = slideLength - 1;
       }
-    },
+      slide[index].classList.add("active");
+      console.log(index);
+    });
+  
+    rightButtonSlide.addEventListener("click", () => {
+      slide[index].classList.remove("active");
+      index += 1;
+      if (index >= slideLength) {
+        index = 1;
+      }
+      slide[index].classList.add("active");
+      console.log(index);
+    });
+  
+    const menuButton = document.querySelector(".menyknapp");
+    const menu = document.querySelector(".huvudmeny");
+  
+    menuButton.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
   });
-  slideshow.mount(".slideshow");
-
-   const menuButton = document.querySelector(".menyknapp");
-   const menu = document.querySelector(".huvudmeny");
-
-   menuButton.addEventListener("click", () => {
-   menu.classList.toggle("active");});
+  
