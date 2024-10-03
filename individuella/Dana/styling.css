@@ -5,23 +5,23 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: repeat(4, 1fr); /* Dela in i 4 rader */
-    height: 100vh; /* Full höjd på sidan */
-    align-items: center; /* Centrerar griditems vertikalt, staplade*/
-    justify-items: center; /* Centrerar innehållet inuti varje griditem  */
-    background-color: #a2cefe32; /* Bakgrundsfärg */
+    grid-template-rows: repeat(4, 1fr); 
+    height: 100vh; 
+    align-items: center; 
+    justify-items: center; 
+    background-color: #a2cefe32; 
 }
 
 .grid-item {
-    background-color: #a2cefe32; /* Bakgrundsfärg för grid items */
-    border: 5px solid #A2CFFE; /* Ram för grid items */
-    padding: 2em; /* Inre marginal */
-    width: 100%; /* Bredd av grid items */
-    text-align: center; /* Centrera texten inuti grid items */
+    background-color: #a2cefe32; 
+    border: 5px solid #A2CFFE;
+    padding: 2em; 
+    width: 100%; 
+    text-align: center; 
 }
 
 h2 {
-    margin: 0 0 10px 0; /* Marginaler för rubriker */
+    margin: 0 0 10px 0; 
 }
 
 
@@ -46,12 +46,12 @@ header {
 }
 
 #checkbox {
-    display: none; /* Hidden by default */
+    display: none; 
     
 }
 
 .menyikon {
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 @media (max-width: 600px) {
