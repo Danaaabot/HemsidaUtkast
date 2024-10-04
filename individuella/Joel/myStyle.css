@@ -1,0 +1,118 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 1rem auto;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #F2F2E4;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: justify;
+}
+
+img {
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 3%;
+}
+
+button {
+    max-width: 100px;
+    padding: 1rem;
+}
+
+header {
+    text-align: right;
+    padding: 1rem;
+    background-color: #AE9383;
+}
+
+/**
+* Menu in header element
+**/
+#menu {
+    display: none;
+    margin: 0.5rem;
+    list-style-type: none;
+}
+
+#menu-toggle:checked~#menu {
+    display: block;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/**
+* Grid-layout container
+**/
+#presentation-container {
+    display: grid;
+}
+
+#presentation-container img {
+
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.myFlexproject {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0;
+    margin: 0;
+    justify-content: center ;
+}
+
+
+.flex-item {
+    max-width: 500px; 
+}
+#myProjectHeader{
+    background-color: #CDBAB1;
+}
+#myProjects img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        margin: 0 20%;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .description {
+        grid-row: 1 / span 4;
+        grid-column: 1;
+    }
+
+    .photoSlide {
+        grid-row: 2 / span 2;
+        grid-column: 2;
+
+    }
+    .photoSlideBtn{
+        grid-row: 4;
+        grid-column: 2;
+    }
+}

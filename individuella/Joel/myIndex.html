@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,200" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="myScript.js"></script>
+    <script defer src="./myVue.js"></script>
+
+    <title>Hemsida.com</title>
+</head>
+
+<body>
+    <header>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" id="menu-icon">&#9776;</label>
+        <ul id="menu">
+            <li>Om mig</li>
+            <li><a href="#myProjects">Projekt</a></li>
+            <li><a href="#photo">Bildspel</a></li>
+        </ul>
+
+    </header>
+    <h1>Henrik Alm</h1>
+    <div id="presentation-container">
+        <div class="grid-item description">
+            <h2> Min bakgrund</h2>
+            <p>
+                Jag är en passionerad webbutvecklare med flera års erfarenhet inom både frontend- och
+                backend-utveckling.
+                Jag har en kandidatexamen i datavetenskap från Lunds universitet, där jag specialiserade mig på
+                webbutveckling och systemdesign.
+                Under min tid på universitetet var jag aktiv i olika studentprojekt som fokuserade på att skapa
+                användarvänliga webbapplikationer, vilket gav mig en stark grund <br /> inom moderna
+                webbutvecklingsteknologier som HTML, CSS, JavaScript samt ramverk som React och Angular.
+                Jag har även ett stort intresse för backend-programmering och arbetar ofta med PHP, Node.js och
+                databaser som MySQL och MongoDB.
+            </p>
+            <h2>På Fritiden </h2>
+            <p>
+                När jag inte sitter framför datorn och kodar, spenderar jag gärna tid med min familj.
+                Jag är gift med Emma, och tillsammans har vi två barn, en son och en dotter.
+                Vi bor i en mysig villa i utkanten av Malmö, där vi ofta njuter av att vara ute i naturen.
+                Jag är en hängiven löpare och deltar regelbundet i lokala maraton och terränglopp.
+                Utöver löpningen är jag även en musikentusiast och spelar gitarr på min fritid.
+                Jag tycker om att samla vinylskivor och kan ofta ses på musikmässor eller loppisar på jakt efter
+                sällsynta album.
+            </p>
+        </div>
+
+        <div class="grid-item photoSlide">
+            <img id="photo" src="" alt="Några bilder på mig i olika miljöer">
+        </div>
+        <div class="grid-item photoSlideBtn">
+            <button id="backwardBtn">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <button id="forwardBtn">
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="myProjects">
+        <h1 id=myProjectHeader>
+            Mina nuvarande projekt
+        </h1>
+        <div class="myProjcetSlide" v-for="project in projects" :key="project.id">
+            <div class="myFlexproject" v-if="currentProject === project.id">
+                <div class="flex-item">
+                    <img class="myProjectPhoto" :src=project.img alt="En bild på ett av nuvarande projekt">
+                    <button id="backwarVuedBtn" @click="previosProject()">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+                    <button id="forwardVueBtn" @click="nextProject()">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+                <div class="flex-item">
+                    <h2> {{ project.title }}</h2>
+                    <p> {{ project.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
