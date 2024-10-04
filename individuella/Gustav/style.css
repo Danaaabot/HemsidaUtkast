@@ -207,6 +207,7 @@ h2 {
 .leftButtonArt,
 .rightButtonArt {
   position: absolute;
+  display: flex;
   bottom: -40px;
   top: 70px;
 }
@@ -320,4 +321,21 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
   }
+  .leftButtonArt,
+.rightButtonArt {
+  position: absolute;
+  bottom: 40px;
+  top: -100px;
+  width: 20px;
+  height: 20px;
+
+}
+
+.leftButtonArt {
+  left: 42%;
+}
+
+.rightButtonArt {
+  right: 42%;
+}
 }
