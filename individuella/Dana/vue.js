@@ -34,7 +34,7 @@ Vue.component('projektkomponent', {
     }
 });
 
-// Skapar en Vue-instans så ovanstående component defintion funkar
+//renderar appen
 new Vue({
     el: '#minaprojekt' 
 });
